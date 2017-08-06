@@ -5,18 +5,18 @@ function drawCrosshairs() {
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'X');
     data.addColumn('number', '黑人问号.jpg');
-    data.addColumn('number', '水能载舟');
-    data.addColumn('number', 'CE使我快乐');
-    data.addColumn('number', '复苏');
-    data.addColumn('number', '我们吓成一团了');
-    data.addColumn('number', 'TAT');
-    data.addColumn('number', '头文件');
-    data.addColumn('number', '人生已经如此的艰难');
     data.addColumn('number', '我需要治疗');
+    data.addColumn('number', '水能载舟');
+    data.addColumn('number', 'TAT');
+    data.addColumn('number', '复苏');
+    data.addColumn('number', '人生已经如此的艰难');
+    data.addColumn('number', '头文件');
+    data.addColumn('number', 'CE使我快乐');
     data.addColumn('number', '终结者');
     data.addColumn('number', '不存在的');
     data.addColumn('number', 'tvcr');
     data.addColumn('number', '极值点');
+    data.addColumn('number', '我们吓成一团了');
     data.addColumn('number', '瞎搞');
 
     data.addRows([
