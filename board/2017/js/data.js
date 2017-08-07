@@ -5,74 +5,88 @@ function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'X');
     data.addColumn('number', '黑人问号.jpg');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '我需要治疗');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '水能载舟');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', 'TAT');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '复苏');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '人生已经如此的艰难');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '头文件');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', 'CE使我快乐');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '终结者');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '不存在的');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', 'tvcr');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '极值点');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '我们吓成一团了');
+    data.addColumn({type:'string', role:'annotation'});
     data.addColumn('number', '瞎搞');
+    data.addColumn({type:'string', role:'annotation'});
 
     data.addRows([
-        [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [8, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2],
-        [11, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 1, 3, 3],
-        [12, 4, 4, 4, 3, 4, 4, 4, 2, 4, 4, 4, 1, 4, 4],
-        [14, 4, 6, 6, 3, 6, 6, 6, 2, 6, 6, 4, 1, 6, 6],
-        [15, 4, 8, 8, 3, 8, 6, 6, 2, 8, 8, 4, 1, 8, 8],
-        [17, 1, 9, 9, 4, 8, 6, 6, 3, 9, 9, 5, 2, 9, 9],
-        [18, 1, 11, 11, 4, 8, 6, 6, 3, 9, 9, 5, 2, 11, 11],
-        [19, 1, 11, 13, 5, 8, 7, 2, 4, 9, 9, 6, 3, 11, 13],
-        [20, 1, 11, 13, 6, 3, 8, 2, 5, 9, 9, 7, 4, 11, 13],
-        [21, 1, 11, 13, 6, 3, 8, 2, 5, 9, 9, 7, 4, 11, 14],
-        [23, 1, 5, 13, 3, 4, 9, 2, 7, 10, 10, 8, 6, 12, 14],
-        [24, 1, 6, 13, 3, 5, 9, 2, 3, 10, 10, 8, 7, 12, 14],
-        [26, 1, 7, 13, 4, 6, 9, 2, 4, 10, 10, 8, 2, 12, 14],
-        [27, 1, 7, 13, 4, 6, 8, 2, 4, 10, 10, 9, 2, 12, 14],
-        [29, 1, 7, 14, 4, 6, 8, 2, 4, 10, 10, 9, 2, 12, 13],
-        [32, 1, 7, 9, 4, 6, 8, 2, 4, 11, 11, 10, 2, 13, 14],
-        [34, 1, 7, 10, 4, 6, 8, 2, 4, 9, 12, 11, 2, 13, 14],
-        [35, 1, 7, 11, 2, 6, 9, 3, 5, 10, 12, 8, 3, 13, 14],
-        [49, 1, 3, 11, 2, 7, 9, 4, 6, 10, 12, 8, 4, 13, 14],
-        [56, 1, 3, 11, 2, 7, 9, 4, 6, 10, 13, 8, 4, 12, 14],
-        [61, 1, 3, 4, 2, 8, 10, 5, 7, 11, 13, 9, 5, 12, 14],
-        [65, 1, 3, 4, 2, 5, 10, 6, 8, 11, 13, 9, 6, 12, 14],
-        [67, 1, 3, 4, 2, 5, 10, 6, 8, 11, 13, 9, 6, 12, 14],
-        [70, 1, 3, 4, 2, 5, 10, 6, 8, 11, 14, 9, 6, 12, 13],
-        [95, 2, 3, 4, 1, 5, 10, 6, 8, 11, 14, 9, 6, 12, 13],
-        [96, 1, 3, 4, 2, 5, 10, 6, 8, 11, 14, 9, 6, 12, 13],
-        [116, 1, 3, 4, 2, 5, 10, 6, 8, 11, 14, 9, 6, 12, 13],
-        [132, 1, 3, 4, 2, 5, 10, 6, 8, 11, 14, 9, 6, 12, 13],
-        [155, 1, 3, 4, 2, 5, 6, 7, 9, 11, 14, 10, 7, 12, 13],
-        [160, 1, 3, 4, 2, 5, 6, 7, 9, 11, 14, 10, 7, 12, 13],
-        [168, 1, 3, 4, 2, 5, 7, 8, 6, 11, 14, 10, 8, 12, 13],
-        [178, 1, 2, 4, 3, 5, 7, 8, 6, 11, 14, 10, 8, 12, 13],
-        [181, 1, 3, 4, 2, 5, 7, 8, 6, 11, 14, 10, 8, 12, 13],
-        [187, 1, 3, 4, 2, 5, 7, 8, 6, 11, 14, 10, 8, 12, 13],
-        [205, 1, 3, 4, 2, 5, 7, 8, 6, 11, 14, 10, 8, 12, 13],
-        [212, 1, 3, 4, 2, 5, 7, 8, 6, 11, 14, 10, 8, 12, 13],
-        [219, 1, 2, 4, 3, 5, 7, 8, 6, 11, 14, 10, 8, 12, 13],
-        [226, 1, 2, 4, 3, 5, 7, 9, 6, 8, 14, 11, 9, 12, 13],
-        [227, 1, 2, 4, 3, 6, 5, 9, 7, 8, 14, 11, 9, 12, 13],
-        [233, 1, 2, 4, 3, 6, 5, 8, 7, 9, 14, 11, 10, 12, 13],
-        [246, 1, 2, 4, 3, 6, 5, 8, 7, 9, 10, 12, 11, 13, 14],
-        [247, 1, 2, 3, 4, 6, 5, 8, 7, 9, 10, 12, 11, 13, 14],
-        [251, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 12, 11, 13, 14],
-        [267, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 12, 11, 13, 14],
-        [272, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 12, 11, 13, 14],
-        [274, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14],
-        [282, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14],
-        [290, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14],
-        [295, 1, 2, 4, 3, 5, 6, 8, 7, 9, 10, 11, 12, 13, 14],
-        [298, 1, 2, 4, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-        [299, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-        [300, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+        [0, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null, -1, null],
+        [8, -2, null, -2, null, -2, null, -2, null, -2, null, -2, null, -2, null, -2, null, -2, null, -2, null, -2, null, -1, 'I', -2, null, -2, null],
+        [11, -3, null, -3, null, -3, null, -3, null, -3, null, -3, null, -3, null, -2, 'I', -3, null, -3, null, -3, null, -1, null, -3, null, -3, null],
+        [12, -4, null, -4, null, -4, null, -3, 'I', -4, null, -4, null, -4, null, -2, null, -4, null, -4, null, -4, null, -1, null, -4, null, -4, null],
+        [14, -4, 'I', -6, null, -6, null, -3, null, -6, null, -6, null, -6, null, -2, null, -6, null, -6, null, -4, 'I', -1, null, -6, null, -6, null],
+        [15, -4, null, -8, null, -8, null, -3, null, -8, null, -6, 'I', -6, 'I', -2, null, -8, null, -8, null, -4, null, -1, null, -8, null, -8, null],
+        [17, -1, 'K', -9, null, -9, null, -4, null, -8, 'I', -6, null, -6, null, -3, null, -9, null, -9, null, -5, null, -2, null, -9, null, -9, null],
+        [18, -1, null, -11, null, -11, null, -4, null, -8, null, -6, null, -6, null, -3, null, -9, 'I', -9, 'I', -5, null, -2, null, -11, null, -11, null],
+        [19, -1, null, -11, 'I', -13, null, -5, null, -8, null, -7, null, -2, 'K', -4, null, -9, null, -9, null, -6, null, -3, null, -11, 'I', -13, null],
+        [20, -1, null, -11, null, -13, null, -6, null, -3, 'K', -8, null, -2, null, -5, null, -9, null, -9, null, -7, null, -4, null, -11, null, -13, null],
+        [21, -1, null, -11, null, -13, 'I', -6, null, -3, null, -8, null, -2, null, -5, null, -9, null, -9, null, -7, null, -4, null, -11, null, -14, null],
+        [23, -1, null, -5, 'K', -13, null, -3, 'K', -4, null, -9, null, -2, null, -7, null, -10, null, -10, null, -8, null, -6, null, -12, null, -14, null],
+        [24, -1, null, -6, null, -13, null, -3, null, -5, null, -9, null, -2, null, -3, 'K', -10, null, -10, null, -8, null, -7, null, -12, null, -14, null],
+        [26, -1, null, -7, null, -13, null, -4, null, -6, null, -9, null, -2, null, -4, null, -10, null, -10, null, -8, null, -2, 'K', -12, null, -14, null],
+        [27, -1, null, -7, null, -13, null, -4, null, -6, null, -8, 'K', -2, null, -4, null, -10, null, -10, null, -9, null, -2, null, -12, null, -14, null],
+        [29, -1, null, -7, null, -14, null, -4, null, -6, null, -8, null, -2, null, -4, null, -10, null, -10, null, -9, null, -2, null, -12, null, -13, 'I'],
+        [32, -1, null, -7, null, -9, 'K', -4, null, -6, null, -8, null, -2, null, -4, null, -11, null, -11, null, -10, null, -2, null, -13, null, -14, null],
+        [34, -1, null, -7, null, -10, null, -4, null, -6, null, -8, null, -2, null, -4, null, -9, 'K', -12, null, -11, null, -2, null, -13, null, -14, null],
+        [35, -1, 'C', -7, null, -11, null, -2, 'C', -6, null, -9, null, -3, null, -5, null, -10, null, -12, null, -8, 'K', -3, null, -13, null, -14, null],
+        [49, -1, null, -3, 'C', -11, null, -2, null, -7, null, -9, null, -4, null, -6, null, -10, null, -12, null, -8, null, -4, null, -13, null, -14, null],
+        [56, -1, null, -3, null, -11, null, -2, null, -7, null, -9, null, -4, null, -6, null, -10, null, -13, null, -8, null, -4, null, -12, 'K', -14, null],
+        [61, -1, null, -3, null, -4, 'C', -2, null, -8, null, -10, null, -5, null, -7, null, -11, null, -13, null, -9, null, -5, null, -12, null, -14, null],
+        [65, -1, null, -3, null, -4, null, -2, null, -5, 'C', -10, null, -6, null, -8, null, -11, null, -13, null, -9, null, -6, null, -12, null, -14, null],
+        [67, -1, null, -3, null, -4, null, -2, null, -5, null, -10, null, -6, null, -8, null, -11, null, -13, 'K', -9, null, -6, null, -12, null, -14, null],
+        [70, -1, null, -3, null, -4, null, -2, null, -5, null, -10, null, -6, null, -8, null, -11, null, -14, null, -9, null, -6, null, -12, null, -13, 'K'],
+        [95, -2, null, -3, null, -4, null, -1, 'L', -5, null, -10, null, -6, null, -8, null, -11, null, -14, null, -9, null, -6, null, -12, null, -13, null],
+        [96, -1, 'E', -3, null, -4, null, -2, null, -5, null, -10, null, -6, null, -8, null, -11, null, -14, null, -9, null, -6, null, -12, null, -13, null],
+        [116, -1, null, -3, 'G', -4, null, -2, null, -5, null, -10, null, -6, null, -8, null, -11, null, -14, null, -9, null, -6, null, -12, null, -13, null],
+        [132, -1, null, -3, null, -4, 'D', -2, null, -5, null, -10, null, -6, null, -8, null, -11, null, -14, null, -9, null, -6, null, -12, null, -13, null],
+        [155, -1, null, -3, null, -4, null, -2, null, -5, null, -6, 'C', -7, null, -9, null, -11, null, -14, null, -10, null, -7, null, -12, null, -13, null],
+        [160, -1, 'H', -3, null, -4, null, -2, null, -5, null, -6, null, -7, null, -9, null, -11, null, -14, null, -10, null, -7, null, -12, null, -13, null],
+        [168, -1, null, -3, null, -4, null, -2, null, -5, null, -7, null, -8, null, -6, 'C', -11, null, -14, null, -10, null, -8, null, -12, null, -13, null],
+        [178, -1, null, -2, 'D', -4, null, -3, null, -5, null, -7, null, -8, null, -6, null, -11, null, -14, null, -10, null, -8, null, -12, null, -13, null],
+        [181, -1, null, -3, null, -4, null, -2, 'D', -5, null, -7, null, -8, null, -6, null, -11, null, -14, null, -10, null, -8, null, -12, null, -13, null],
+        [187, -1, null, -3, null, -4, 'H', -2, null, -5, null, -7, null, -8, null, -6, null, -11, null, -14, null, -10, null, -8, null, -12, null, -13, null],
+        [205, -1, 'B', -3, null, -4, null, -2, null, -5, null, -7, null, -8, null, -6, null, -11, null, -14, null, -10, null, -8, null, -12, null, -13, null],
+        [212, -1, 'G', -3, null, -4, null, -2, null, -5, null, -7, null, -8, null, -6, null, -11, null, -14, null, -10, null, -8, null, -12, null, -13, null],
+        [219, -1, null, -2, 'L', -4, null, -3, null, -5, null, -7, null, -8, null, -6, null, -11, null, -14, null, -10, null, -8, null, -12, null, -13, null],
+        [226, -1, null, -2, null, -4, null, -3, null, -5, null, -7, null, -9, null, -6, null, -8, 'C', -14, null, -11, null, -9, null, -12, null, -13, null],
+        [227, -1, null, -2, null, -4, null, -3, null, -6, null, -5, 'D', -9, null, -7, null, -8, null, -14, null, -11, null, -9, null, -12, null, -13, null],
+        [233, -1, null, -2, null, -4, null, -3, null, -6, null, -5, null, -8, 'H', -7, null, -9, null, -14, null, -11, null, -10, null, -12, null, -13, null],
+        [246, -1, null, -2, null, -4, null, -3, null, -6, null, -5, null, -8, null, -7, null, -9, null, -10, 'C', -12, null, -11, null, -13, null, -14, null],
+        [247, -1, null, -2, null, -3, 'G', -4, null, -6, null, -5, null, -8, null, -7, null, -9, null, -10, null, -12, null, -11, null, -13, null, -14, null],
+        [251, -1, null, -2, null, -3, null, -4, null, -5, 'D', -6, null, -8, null, -7, null, -9, null, -10, null, -12, null, -11, null, -13, null, -14, null],
+        [267, -1, null, -2, null, -3, null, -4, null, -5, 'G', -6, null, -8, null, -7, null, -9, null, -10, null, -12, null, -11, null, -13, null, -14, null],
+        [272, -1, null, -2, 'B', -3, null, -4, null, -5, null, -6, null, -8, null, -7, null, -9, null, -10, null, -12, null, -11, null, -13, null, -14, null],
+        [274, -1, null, -2, null, -3, null, -4, null, -5, null, -6, null, -8, null, -7, null, -9, null, -10, null, -11, 'C', -12, null, -13, null, -14, null],
+        [282, -1, 'D', -2, null, -3, null, -4, null, -5, null, -6, null, -8, null, -7, null, -9, null, -10, null, -11, null, -12, null, -13, null, -14, null],
+        [290, -1, 'L', -2, null, -3, null, -4, null, -5, null, -6, null, -8, null, -7, null, -9, null, -10, null, -11, null, -12, null, -13, null, -14, null],
+        [295, -1, null, -2, null, -4, null, -3, 'G', -5, null, -6, null, -8, null, -7, null, -9, null, -10, null, -11, null, -12, null, -13, null, -14, null],
+        [298, -1, null, -2, null, -4, null, -3, null, -5, null, -6, null, -7, 'D', -8, null, -9, null, -10, null, -11, null, -12, null, -13, null, -14, null],
+        [299, -1, null, -2, null, -3, 'B', -4, null, -5, null, -6, null, -7, null, -8, null, -9, null, -10, null, -11, null, -12, null, -13, null, -14, null],
+        [300, -1, null, -2, null, -3, null, -4, null, -5, null, -6, null, -7, null, -8, null, -9, null, -10, null, -11, null, -12, null, -13, null, -14, null]
     ]);
 
     var options = {
@@ -80,8 +94,7 @@ function drawChart() {
             title: 'Time'
         },
         vAxis: {
-            title: 'Rank',
-            direction: -1
+            title: 'Rank'
         },
         width: 1280,
         height: 720
