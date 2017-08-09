@@ -1,6 +1,6 @@
 google.charts.load('current', {packages: ['corechart', 'line']});
 
-var key = '01';
+var key = '';
 
 function formatter(hour, minute) {
     var str = '';
@@ -104,7 +104,6 @@ function drawChart() {
     var pass_time = [0, 300];
     chart_data.addColumn('number', 'X');
     for (var i = 0 ; i < ranklist.length ; ++ i) {
-        console.log(ranklist[i]);
         chart_data.addColumn('number',  ranklist[i]);
         chart_data.addColumn({type:'string', role:'annotation'});
         for (var j = 0 ; j < problem_num ; ++ j) {
@@ -159,7 +158,6 @@ function drawChart() {
                 row.push(null);
             }
         }
-        console.log(pass_time[k]);
         chart_data.addRow(row);
     }
 
@@ -178,9 +176,16 @@ function drawChart() {
     chart.draw(chart_data, options);
 }
 
-$(document).ready(function() {
-    parse_board();
-    google.charts.setOnLoadCallback(drawChart);
+$(document).ready(function () {
+    $('.header').empty();
+    for (var p in data) {
+        if (p === 'end') break;
+        var link = '<a onclick="parse(' + "'" + p + "'" + ')" href=#'+ p +'>' + p + '</a>\n';
+        $('.header').append(link);
+    }
+    var arg_list = window.location.href.split('#');
+    key = arg_list.length < 2 ? '01' : arg_list[1];
+    parse(key);
 });
 
 function parse(str) {
