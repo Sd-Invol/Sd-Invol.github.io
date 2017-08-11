@@ -100,7 +100,7 @@ function drawChart() {
     var ranklist = contest.ranklist;
     var problem_num = contest.num;
     var chart_data = new google.visualization.DataTable();
-    var pass_time = [0, contest.time === undefined ? 300 : contest.time];
+    var pass_time = [0, contest.time ? contest.time : 300];
     
     chart_data.addColumn('number', 'X');
     for (var i = 0 ; i < ranklist.length ; ++ i) {
