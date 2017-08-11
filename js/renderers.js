@@ -101,7 +101,9 @@ function drawChart() {
     var problem_num = contest.num;
     var chart_data = new google.visualization.DataTable();
 
-    var pass_time = [0, 300];
+    var total_time = contest.time == null ? 300 : contest.time;
+    
+    var pass_time = [0, total_time];
     chart_data.addColumn('number', 'X');
     for (var i = 0 ; i < ranklist.length ; ++ i) {
         chart_data.addColumn('number',  ranklist[i]);
