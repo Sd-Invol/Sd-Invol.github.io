@@ -44,6 +44,7 @@ function parse_detail(detail, first_blood) {
 
 function parse_board() {
     var contest = data[key];
+    console.log(contest.title);
     $('.title').text(contest.title);
     $('.date').text(contest.date);
     $('.table').empty();
@@ -101,7 +102,7 @@ function drawChart() {
     var problem_num = contest.num;
     var chart_data = new google.visualization.DataTable();
     var pass_time = [0, contest.time ? contest.time : 300];
-    
+
     chart_data.addColumn('number', 'X');
     for (var i = 0 ; i < ranklist.length ; ++ i) {
         chart_data.addColumn('number',  ranklist[i]);
@@ -177,11 +178,11 @@ function drawChart() {
 }
 
 $(document).ready(function () {
-    $('.header').empty();
+    $('#contest_list').empty();
     for (var p in data) {
         if (p === 'end') break;
-        var link = '<a onclick="parse(' + "'" + p + "'" + ')" href=#'+ p +'>' + p + '</a>\n';
-        $('.header').append(link);
+        var link = '<a class="mdc-list-item" onclick="parse(' + "'" + p + "'" + ')" href=#' + p + '>' + data[p].date + '</a>';
+        $('#contest_list').append(link);
     }
     var arg_list = window.location.href.split('#');
     key = arg_list.length < 2 ? '01' : arg_list[1];
