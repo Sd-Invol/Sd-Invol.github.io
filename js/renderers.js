@@ -179,8 +179,13 @@ function drawChart() {
 
 $(document).ready(function () {
     $('#contest_list').empty();
+    contest_list = [];
     for (var p in data) {
-        if (p === 'end') break;
+        if (p === 'end') continue;
+        contest_list.append(p);    
+    }
+    for (var i in contest_list.sort()) {
+        var p = contest_list[i];
         var link = '<a class="mdc-list-item" onclick="parse(' + "'" + p + "'" + ')" href=#' + p + '>' + data[p].date + '</a>';
         $('#contest_list').append(link);
     }
