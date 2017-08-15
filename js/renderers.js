@@ -182,7 +182,7 @@ $(document).ready(function () {
     contest_list = [];
     for (var p in data) {
         if (p === 'end') continue;
-        contest_list.append(p);    
+        contest_list.push(p);    
     }
     for (var i in contest_list.sort()) {
         var p = contest_list[i];
