@@ -57,9 +57,10 @@ nav:
     url:            "/tags"
   - name:           "TopCoder"
     url:            "/topcoder"
+  - name:           "wiki"
+    url:            "https://wiki.icpc-camp.org/twsf/Front Page.html"
   - name:           "Github"
     url:            "https://github.com/sd-invol"
-
 
 
 # Sass
