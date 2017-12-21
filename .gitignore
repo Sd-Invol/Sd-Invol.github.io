@@ -1,11 +1,15 @@
-# Files and directories created by pub
-.packages
-.pub/
-build/
-# Remove the following pattern if you wish to check in your lock file
-pubspec.lock
+_site/*
+_theme_packages/*
+_drafts/
+_scripts/
 
-# Directory created by dartdoc
-doc/api/
-
+Thumbs.db
 .DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+
+*~
+*#
