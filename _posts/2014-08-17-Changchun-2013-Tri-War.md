@@ -24,20 +24,22 @@ category: algorithm
 
 建立新树的关键代码：
 
-    foreach(it , Vec) {
-        int u = *it;
-        while (top && R[u] > R[S[top - 1]]) {
-            -- top;
-        }
-        val[u] = size[u];
-        if (top) {
-            int v = S[top - 1] , w = size[getkth(u , dep[u] - dep[v] - 1)];
-            val[v] -= w;
-            wei[MCNT >> 1] = w - size[u];
-            E[MCNT] = (edge) {u , P[v]} , P[v] = MCNT ++;
-            E[MCNT] = (edge) {v , P[u]} , P[u] = MCNT ++;
-        } else {
-            val[u] += n - size[u];
-        }
-        S[top ++] = u;
+{% highlight cpp %}
+foreach(it , Vec) {
+    int u = *it;
+    while (top && R[u] > R[S[top - 1]]) {
+        -- top;
     }
+    val[u] = size[u];
+    if (top) {
+        int v = S[top - 1] , w = size[getkth(u , dep[u] - dep[v] - 1)];
+        val[v] -= w;
+        wei[MCNT >> 1] = w - size[u];
+        E[MCNT] = (edge) {u , P[v]} , P[v] = MCNT ++;
+        E[MCNT] = (edge) {v , P[u]} , P[u] = MCNT ++;
+    } else {
+        val[u] += n - size[u];
+    }
+    S[top ++] = u;
+}
+{% endhighlight %}

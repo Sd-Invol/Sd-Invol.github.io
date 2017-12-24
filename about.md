@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
-permalink: /about/
+titles: About
+key: page-about
 ---
 
-- An undergraduate student at Beihang university major in Computer Science , will be graduated in 2016.
+- Googler, graduated in Beihang University at 2016.
 - [ACM-ICPC](http://icpc.baylor.edu/ICPCID/5181XRZVOTX5)
   + 2013-2014
     + Team Name: Phasianus
@@ -25,11 +25,3 @@ permalink: /about/
   + ID : [sd0061](http://codeforces.com/profile/sd0061)
 - Topcoder
   + ID : [sd0061](https://www.topcoder.com/members/sd0061/details/?track=DATA_SCIENCE&subTrack=SRM)
-- E-mail: Sd.Invol `at` gmail `dot` com
-
----
-
-{% if page.comments != false and site.disqus.id %}
-  <section id="disqus_thread"></section>
-  {% include disqus.html %}
-{% endif %}
