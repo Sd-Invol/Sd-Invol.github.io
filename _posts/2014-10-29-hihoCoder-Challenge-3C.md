@@ -4,6 +4,7 @@ title: "hihoCoder Challenge 3 全图传送"
 author: Sd.Invol
 tags: ["Editorial","divide and conquer"]
 category: algorithm
+key: 100015
 ---
 
 [题目链接](http://hihocoder.com/problemset/problem/1065)

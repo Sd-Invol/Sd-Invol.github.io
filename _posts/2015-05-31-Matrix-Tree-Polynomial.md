@@ -4,11 +4,12 @@ title: "由Matrix-Tree到多项式插值"
 author: Sd.Invol
 tags: ["Graph","Math"]
 category: algorithm
+key: 100021
 ---
 
 <del>《社会计算》大作业</del>
 
-#### 生成树
+## 生成树
 
 生成树(spanning-tree)是图论里面一个重要的概念。
 
@@ -16,7 +17,7 @@ category: algorithm
 如果只是要求一棵生成树或者是要求边总权值最小的生成树，有很多经典的算法，比如Prim与Kruscal算法。
 然而如果要求一个无向图的生成树数量，就不是一个那么简单的任务了。
 
-#### Matrix-Tree定理
+## Matrix-Tree定理
 
 以下引用自国家集训队2008论文集
 
@@ -27,7 +28,7 @@ category: algorithm
 
 >我们定义G的Kirchhoff矩阵(也称为拉普拉斯算子)C[G]为C[G]=D[G]-A[G]，则Matrix-Tree定理可以描述为：G的所有不同的生成树的个数等于其Kirchhoff矩阵C[G]任何一个n-1阶主子式的行列式的绝对值。所谓n-1阶主子式，就是对于r(1≤r≤n)，将C[G]的第r行、第r列同时去掉后得到的新矩阵，用Cr[G]表示。
 
-#### The Matrix Revolutions(ICPC Regionals 2014 :: Asia - Shanghai Problem A)
+## The Matrix Revolutions(ICPC Regionals 2014 :: Asia - Shanghai Problem A)
 给定一个无向图，每条边上有黑色或者白色，求黑色边数不超过K的生成树数量对10^9+7取模。
 点数不超过50。
 

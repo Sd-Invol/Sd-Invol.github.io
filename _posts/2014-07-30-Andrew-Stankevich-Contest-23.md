@@ -4,6 +4,7 @@ title: "Andrew Stankevich Contest 23"
 author: Sd.Invol
 tags: ["Editorial"]
 category: algorithm
+key: 100003
 ---
 
 [题目链接](http://codeforces.com/gym/100339)

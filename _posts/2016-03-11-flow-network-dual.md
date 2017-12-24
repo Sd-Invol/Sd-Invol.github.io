@@ -4,6 +4,7 @@ title: "费用流的对偶建模"
 author: Sd.Invol
 tags: ["Math"]
 category: algorithm
+key: 100030
 ---
 
 考虑最大费用循环流的标准线性规划建模：

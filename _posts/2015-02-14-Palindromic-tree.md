@@ -4,6 +4,7 @@ title: "Palindromic tree"
 author: Sd.Invol
 tags: ["Data Structure","String"]
 category: algorithm
+key: 100020
 ---
 
 一个字符串中的回文子串的种类数是$O(n)$的，$n$为字符串长度。因为每在一个串后面加一个字符最多只可能新加一种回文子串。

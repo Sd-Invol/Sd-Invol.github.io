@@ -4,6 +4,7 @@ title: "Trivial matters"
 author: Sd.Invol
 tags: ["summary"]
 category: other
+key: 100027
 ---
 
 又是一年ACM-ICPC Regional结束的时期，稍微总结一些这个赛季吧，感觉这个赛季还是有不少收获的。

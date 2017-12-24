@@ -4,6 +4,7 @@ title: "2014西安全国邀请赛简易题解"
 author: Sd.Invol
 tags: ["Editorial"]
 category: algorithm
+key: 100001
 ---
 
 [题目链接](http://acm.hdu.edu.cn/search.php?field=problem&key=2014%CE%F7%B0%B2%C8%AB%B9%FA%D1%FB%C7%EB%C8%FC&source=1&searchmode=source)

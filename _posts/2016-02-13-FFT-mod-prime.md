@@ -4,6 +4,7 @@ title: "FFT mod 1e9 + 7"
 author: Sd.Invol
 tags: ["Math"]
 category: algorithm
+key: 100029
 ---
 
 在做FFT mod 任意质数一个传统的方法是利用NTT和CRT，这样比较适合一些小模数的题目，因为要保证$NP^2$在64位整数范围内，不然将需要更高精度的整数。

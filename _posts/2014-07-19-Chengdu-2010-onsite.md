@@ -4,6 +4,7 @@ title: "2010 Asia Chengdu Regional Contest"
 author: Sd.Invol
 tags: ["Editorial"]
 category: algorithm
+key: 100002
 ---
 
 一套质量非常棒的题目，不拿来训练实在可惜。整体难度不是很大，但简单题比较少。

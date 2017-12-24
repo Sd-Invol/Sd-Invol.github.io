@@ -4,6 +4,7 @@ title: "hdu 4999 Overt"
 author: Sd.Invol
 tags: ["Editorial","DP"]
 category: algorithm
+key: 100011
 ---
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=4999)

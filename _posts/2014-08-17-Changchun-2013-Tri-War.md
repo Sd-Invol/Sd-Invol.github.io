@@ -4,6 +4,7 @@ title: "hdu 4822 Tri-War"
 author: Sd.Invol
 tags: ["Editorial"]
 category: algorithm
+key: 100004
 ---
 
 [题目链接](http://acm.hdu.edu.cn/showproblem.php?pid=4822)

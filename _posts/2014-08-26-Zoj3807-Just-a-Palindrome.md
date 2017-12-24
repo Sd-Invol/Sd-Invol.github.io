@@ -4,6 +4,7 @@ title: "ZOJ3807 Just a Palindrome"
 author: Sd.Invol
 tags: ["Editorial","String"]
 category: algorithm
+key: 100005
 ---
 
 [题目链接](http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemCode=3807)

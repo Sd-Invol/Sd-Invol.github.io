@@ -4,6 +4,7 @@ title: "2014 ACM/ICPC Asia Regional Beijing Online"
 author: Sd.Invol
 tags: ["Editorial"]
 category: algorithm
+key: 100008
 ---
 
 [题目链接](http://acm.hdu.edu.cn/search.php?field=problem&key=2014%20ACM/ICPC%20Asia%20Regional%20Beijing%20Online&source=1&searchmode=source)
