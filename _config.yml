@@ -27,7 +27,7 @@ nav_lists:
     url: /topcoder.html
   - titles:
       en: wiki
-    url: https://wiki.icpc-camp.org/twsf/Front%20Page.html
+    url: https://wiki.icpc-camp.org/twsf/Front%20Page
 
 ## GitHub repository (if the site is hosted by GitHub) ##
 repository:  sd-invol/sd-invol.github.io
